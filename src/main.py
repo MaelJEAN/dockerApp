@@ -50,7 +50,7 @@ def compatibility_ui() -> None:
 
 if __name__ == "__main__":
     st.set_page_config(
-        page_title="Web Sementique Ales",
+        page_title="RatVoyager Web semantique",
         page_icon="random",
         # layout="wide",
         initial_sidebar_state="auto",

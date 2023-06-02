@@ -5,6 +5,21 @@ from rdflib import Graph, Namespace, Literal
 from rdflib.plugins.sparql import prepareQuery
 
 
+with st.form("my_form"):
+   st.write("Inside the form")
+   slider_val = st.slider("Form slider")
+   checkbox_val = st.checkbox("Form checkbox")
+
+   # Every form must have a submit button.
+   submitted = st.form_submit_button("Submit")
+   if submitted:
+       st.write("slider", slider_val, "checkbox", checkbox_val)
+
+st.write("Outside the form")
+
+# Now add a submit button to the form:
+form.form_submit_button("Submit")
+
 def _process_results(results) -> List:
     return [[element for element in row] for row in results]
 
@@ -51,10 +66,10 @@ def get_maps() -> List:
     return results
 
 
-def load_rdf_file(data_url: str = "/data/bdd.rdf") -> bool:
+def load_rdf_file(data_url: str = "/data/transport_Classes.rdf") -> bool:
     if "graph" not in st.session_state:
         try:
-            st.session_state.namespace = "http://www.semanticweb.org/chad/ontologies/2023/4/untitled-ontology-3#"
+            st.session_state.namespace = "http://www.semanticweb.org/mael2/ontologies/2023/4/transport#"
             st.session_state.graph = Graph()
             st.session_state.graph.parse(data_url)
         except:

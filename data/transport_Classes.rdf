@@ -1,0 +1,1704 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mael2/ontologies/2023/4/transport/"
+     xml:base="http://www.semanticweb.org/mael2/ontologies/2023/4/transport/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:transport="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#connects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#connects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasDestination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasDriver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasDriver">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isDriving"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasInfrastructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasInfrastructure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasOrigine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasOrigine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasPeople -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasPeople">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isTraveling"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasTransportMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#hasTransportMode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isDriving -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isDriving"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isTraveling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isTraveling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#offersService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#offersService">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#preferredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#preferredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#providesJourney -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#providesJourney">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#serves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#serves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#usesEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#usesEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#carbonEmission -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#carbonEmission">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#cost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#cost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#distance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#distance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#startDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirlineCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirlineCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Boat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Boat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BoatCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BoatCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CarCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CarCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CheapJourney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CheapJourney">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#cost"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Destination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Driver">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BoatCompany"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusCompany"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CarCompany"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainCompany"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricBus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricBus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Energy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ExpensiveJourney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ExpensiveJourney">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#cost"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fossil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fossil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridBus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridBus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#LongJourney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#LongJourney">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#duration"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Motorboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Motorboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Boat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Passengers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Passengers">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#isTraveling"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Pilot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Pilot">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#employedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirlineCompany"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sailboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sailboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Boat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ShortJourney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ShortJourney">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#duration"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalBus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalBus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TransportMode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirFrance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirFrance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirlineCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Elouan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airbus_A320 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airbus_A320">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Plane"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Kérosène"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alexander_Dennis_Enviro400H -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alexander_Dennis_Enviro400H">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridBus"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alexandre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alexandre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Allemagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Allemagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alès -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alès">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Antoine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Antoine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+        <transport:isTraveling rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Rome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Axel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Axel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+        <transport:isTraveling rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Nîmes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Azimut_Atlantis_45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Azimut_Atlantis_45">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Motorboat"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Barcelone"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BYD_K9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BYD_K9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricBus"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Rome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Rome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <transport:hasDestination rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome"/>
+        <transport:hasDriver rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alexandre"/>
+        <transport:hasOrigine rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin"/>
+        <transport:hasTransportMode rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Solaris_Urbino"/>
+        <transport:carbonEmission rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44</transport:carbonEmission>
+        <transport:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">210</transport:cost>
+        <transport:distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500</transport:distance>
+        <transport:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</transport:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Biocarburant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Biocarburant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Boeing_737 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Boeing_737">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Plane"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Kérosène"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Corsair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Corsair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirlineCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fanny"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CostaCruises -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CostaCruises">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BoatCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Manon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CroisiEurope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CroisiEurope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BoatCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Louis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Deutsche_Bahn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Deutsche_Bahn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Maxime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fossil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Elouan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Elouan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Emma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Emma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Espagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Espagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fossil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#EuropCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#EuropCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CarCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Emma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fanny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fanny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#FlixBus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#FlixBus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Alexandre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_Alès -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_Alès">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_centrale_de_Berlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_centrale_de_Berlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Barcelone-Sants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Barcelone-Sants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_centrale_de_Berlin"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Roma_Termini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Barcelone-Sants"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Nîmes"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Nîmes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Nîmes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Roma_Termini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_centrale_de_Berlin"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Barcelone-Sants"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Roma_Termini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Roma_Termini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Nîmes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gaëtan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gaëtan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+        <transport:isTraveling rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Nîmes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Genêve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Genêve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Hamza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Hamza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+        <transport:isTraveling rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Rome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Honda_Accord_Hybrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Honda_Accord_Hybrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridCar"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Hydrogène -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Hydrogène">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Italie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Italie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Jeanneau_Sun_Odyssey_440 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Jeanneau_Sun_Odyssey_440">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sailboat"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Barcelone"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Éolienne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Kérosène -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Kérosène">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Fossil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Lagoon_450S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Lagoon_450S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sailboat"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Civitavecchia"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Éolienne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Lexus_RX_Hybrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Lexus_RX_Hybrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridCar"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Louis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Louis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Léa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Léa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Manon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Manon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mathieu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mathieu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Maxime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Maxime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Maël -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Maël">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mercedes-Benz_C-Class -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mercedes-Benz_C-Class">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalCar"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mercedes-Benz_Citaro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mercedes-Benz_Citaro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalBus"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nicolas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nicolas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nissan_Leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nissan_Leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricCar"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesToAlèsBus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesToAlèsBus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#OUIGO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#OUIGO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Train"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_Alès"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Nîmes"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#OuiBus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#OuiBus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Léa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Berlin-Brandebourg"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Nîmes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Nîmes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Journey"/>
+        <transport:hasDestination rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes"/>
+        <transport:hasDriver rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sarah"/>
+        <transport:hasOrigine rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris"/>
+        <transport:hasTransportMode rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#OUIGO"/>
+        <transport:carbonEmission rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.1</transport:carbonEmission>
+        <transport:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32.5</transport:cost>
+        <transport:distance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">690</transport:distance>
+        <transport:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</transport:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Peugeot_308 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Peugeot_308">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalCar"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Barcelone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Barcelone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Civitavecchia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Civitavecchia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Civitavecchia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Barcelone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rent-A-Car -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rent-A-Car">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#CarCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Mathieu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rogério -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rogério">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BusStation"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Rome_Fiumicino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Airport"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Aéroport_international_de_Genève"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Barcelone-El_Prat"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Montpellier-Méditerranée"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nîmes-Alès-Camargue-Cévennes"/>
+        <transport:connects rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Paris-Charles-de-Gaulle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RyanAir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RyanAir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AirlineCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Nicolas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#SNCF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#SNCF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sarah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sarah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sarah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sea_Ray_Sundancer_350 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Sea_Ray_Sundancer_350">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Motorboat"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Port_de_Civitavecchia"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Solaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Solaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Solaris_Urbino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Solaris_Urbino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ThermalBus"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#GenêveGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#NîmesGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Diesel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Suisse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Suisse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Train"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_centrale_de_Berlin"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Barcelone-Sants"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TGV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TGV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Train"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_centrale_de_Berlin"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Barcelone-Sants"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Genève-Cornavin"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Montpellier-Saint-Roch"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Paris-Saint-Lazare"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Gare_de_Roma_Termini"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Tesla_Model_S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Tesla_Model_S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricCar"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BerlinGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#MontpellierGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrenItalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrenItalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#TrainCompany"/>
+        <transport:employs rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Thomas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Volvo_7900_Electric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Volvo_7900_Electric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ElectricBus"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#BarceloneNordGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#RomeGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Volvo_7900_Hybrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Volvo_7900_Hybrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#HybridBus"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#AlèsGareRoutière"/>
+        <transport:hasInfrastructure rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#ParisGareRoutière"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Essence"/>
+        <transport:usesEnergy rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Électricité">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Éolienne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Éolienne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mael2/ontologies/2023/4/transport#Renewable"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
